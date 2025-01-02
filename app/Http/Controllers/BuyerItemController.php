@@ -50,7 +50,6 @@ class BuyerItemController extends Controller
      */
     public function show(Item $item)
     {
-        $item = Item::findOrFail($item);
         return view('buyer.show', compact('item'));
     }
 

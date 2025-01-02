@@ -32,6 +32,5 @@ Route::get('/admin-item/create', [\App\Http\Controllers\ItemController::class, '
 Route::post('/admin-item/create', [\App\Http\Controllers\ItemController::class, 'store'])->name('item-store');
 
 Route::get('/', [\App\Http\Controllers\BuyerItemController::class, 'index'])->name('buyeritem');
-Route::get('/item', [\App\Http\Controllers\BuyerItemController::class, 'show'])->name('showitem');
-
-
+Route::get('/item/{item}', [\App\Http\Controllers\BuyerItemController::class, 'show'])->name('showitem');
+Route::get('/cart', [Cart::class, 'index'])->name('cartindex');
