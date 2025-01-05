@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\CartController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,6 +18,8 @@ use Illuminate\Support\Facades\Route;
 //     return view('starter');
 // });
 // admin category controller
+
+
 Route::get('/admin-category', [\App\Http\Controllers\AdminCategoryController::class, 'index'])->name('hlm');
 Route::get('/admin-category/create', [\App\Http\Controllers\AdminCategoryController::class, 'create'])->name('buat');
 Route::post('/admin-category/create', [\App\Http\Controllers\AdminCategoryController::class, 'store'])->name('toko');
@@ -33,4 +35,7 @@ Route::post('/admin-item/create', [\App\Http\Controllers\ItemController::class, 
 
 Route::get('/', [\App\Http\Controllers\BuyerItemController::class, 'index'])->name('buyeritem');
 Route::get('/item/{item}', [\App\Http\Controllers\BuyerItemController::class, 'show'])->name('showitem');
-Route::get('/cart', [Cart::class, 'index'])->name('cartindex');
+Route::get('/carts', [\App\Http\Controllers\CartController::class, 'index'])->name('cartindex');
+
+//Login
+Route::get('/login', [\App\Http\Controllers\Auth\LoginController::class, 'index'])->name('login');

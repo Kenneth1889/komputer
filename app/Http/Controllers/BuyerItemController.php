@@ -87,45 +87,45 @@ class BuyerItemController extends Controller
         //
     }
 
-//     public function showLoginForm()
-//     {
-//         return view('buyer.login'); // Create this view
-//     }
+    // public function showLoginForm()
+    // {
+    //     return view('buyer.login'); // Create this view
+    // }
 
-//     /**
-//      * Handle the login request.
-//      *
-//      * @param  \Illuminate\Http\Request  $request
-//      * @return \Illuminate\Http\Response
-//      */
-//     public function login(Request $request)
-//     {
-//         // Validate the request
-//         $request->validate([
-//             'email' => 'required|email',
-//             'password' => 'required',
-//         ]);
+    // /**
+    //  * Handle the login request.
+    //  *
+    //  * @param  \Illuminate\Http\Request  $request
+    //  * @return \Illuminate\Http\Response
+    //  */
+    // public function login(Request $request)
+    // {
+    //     // Validate the request
+    //     $request->validate([
+    //         'email' => 'required|email',
+    //         'password' => 'required',
+    //     ]);
 
-//         // Attempt to log the user in
-//         if (Auth::attempt(['email' => $request->email, 'password' => $request->password])) {
-//             // If successful, redirect to intended location
-//             return redirect()->intended('buyer.index'); // Change to your desired route
-//         }
+    //     // Attempt to log the user in
+    //     if (Auth::attempt(['email' => $request->email, 'password' => $request->password])) {
+    //         // If successful, redirect to intended location
+    //         return redirect()->intended('buyer.index'); // Change to your desired route
+    //     }
 
-//         // If unsuccessful, redirect back to the login with an error
-//         return back()->withErrors([
-//             'email' => 'The provided credentials do not match our records.',
-//         ]);
-//     }
+    //     // If unsuccessful, redirect back to the login with an error
+    //     return back()->withErrors([
+    //         'email' => 'The provided credentials do not match our records.',
+    //     ]);
+    // }
 
-//     /**
-//      * Log the user out.
-//      *
-//      * @return \Illuminate\Http\Response
-//      */
-//     public function logout(Request $request)
-//     {
-//         Auth::logout();
-//         return redirect('/login'); // Redirect to login page after logout
-//     }
+    // /**
+    //  * Log the user out.
+    //  *
+    //  * @return \Illuminate\Http\Response
+    //  */
+    // public function logout(Request $request)
+    // {
+    //     Auth::logout();
+    //     return redirect('/login'); // Redirect to login page after logout
+    // }
 }

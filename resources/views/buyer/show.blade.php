@@ -9,7 +9,7 @@
           alt="..."/>
         </div>
         <div class="col-md-6">
-          <div class="small mb-1">Original</div>
+          <div class="small mb-1">{{$item->category->name}}</div>
           <h1 class="display-5 fw-bolder">{{ $item->name }}</h1>
           <div class="fs-5 mb-5">
             <span>Rp {{ $item->price }}</span>
