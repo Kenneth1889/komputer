@@ -38,7 +38,7 @@
                     <a href="/admin/item" class="dropdown-item fs-5 fw-medium">Items <span class="text-primary">(Admin)</span></a>
                   </li>
                   <li>
-                    <a href="carts.html" class="dropdown-item fs-5 fw-medium">Cart <span class="text-primary">(PRO)</span></a>
+                    <a href="/carts" class="dropdown-item fs-5 fw-medium">Cart</a>
                   </li>
                   <li>
                     <a href="checkout.html" class="dropdown-item fs-5 fw-medium">Checkout <span class="text-primary">(PRO)</span></a>
