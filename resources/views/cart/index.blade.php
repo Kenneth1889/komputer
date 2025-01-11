@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Cart Checkout</title>
-  <link rel="stylesheet" href="{{ asset('css/cartindex.css') }}">
+  <link rel="stylesheet" href="/css/cartindex.css">
 </head>
 <body>
   @extends('layouts.master')
@@ -67,8 +67,8 @@
                     <img src="https://i.imgur.com/Oj1iQUX.webp" class="img-fluid rounded-3"
                       style="width: 120px;" alt="Book">
                     <div class="flex-column ms-4">
-                      <p class="mb-2">{{$item->category->name}}</p>
-                      <p class="mb-0">{{$item->name}}</p>
+                      <p class="mb-2">tol</p>
+                      <p class="mb-0">ko</p>
                     </div>
                   </div>
                 </th>
